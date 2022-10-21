@@ -1,0 +1,31 @@
+.wrapper{
+    display:grid;
+    grid-template-columns: 50% 50%;
+   }
+   .wrapper > div1{
+    background-color: white;
+    padding:1em;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 8em;
+    margin-left: 40px;
+   }
+   .wrapper > div2{
+    background-color: darkgrey;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    padding: 10px;
+    padding-top: 100px;
+   }
+
+   p2{
+    font-size: 8em;
+    margin-top: 100px;
+    margin-left: 100px;
+   }
+
+   p3{
+    color: red;
+    font-size: 2em;
+    text-align: center;
+    margin-left: 200px;
+   }
