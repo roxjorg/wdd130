@@ -1,0 +1,298 @@
+
+.content1 {
+    /*This is the parent of the activity 1 boxes. */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 20px;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .red1 { 
+    width: 100%; 
+    height: 100px; 
+    background-color: red; 
+    grid-column: 1/3;
+  } 
+
+  .green1 {
+    width: 200px; 
+    height: 200px; 
+    background-color: green; 
+  } 
+  .yellow1 {
+    width: 200px; 
+    height: 200px; 
+    background-color: gold; 
+  } 
+  .blue1 {
+    width: 100%; 
+    height: 100px; 
+    background-color: blue;
+    grid-column: 1/3;
+  } 
+  /* Activity 2 styles */ 
+  .content2 {
+    /* This is the parent of the activity 2 boxes. */
+    display: grid;
+    z-index: auto;
+    grid-template-columns: 50px 50px 50px 50px;
+  }
+  
+  h2{
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .red2 {
+    width: 100px; 
+    height: 100px; 
+    background-color: red; 
+    grid-column: 1/2;
+    z-index: auto;
+  } 
+  .green2 { 
+    width: 100px; 
+    height: 100px; 
+    background-color: green; 
+    z-index: auto;
+  } 
+  .yellow2 {
+    width: 100px; 
+    height: 100px; 
+    background-color: gold; 
+    z-index: auto;
+  } 
+  .blue2 {
+    width: 100px; 
+    height: 100px; 
+    background-color: blue;
+    z-index: auto; 
+  } 
+  /* Activity 3 styles */ 
+  .content3 {
+    /* This is the parent of the activity 3 boxes. */
+    display: grid;
+  }
+
+  h3{
+    text-align: center;
+    font-size: 3em;
+  }
+
+  p1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+  }
+
+  .red3 {
+    width: 100%; 
+    height: 100px; 
+    background-color: red; 
+  } 
+  .green3 {
+    width: 200px; 
+    height: 200px; 
+    background-color: green;
+  } 
+  .yellow3 {
+    width: 100%; 
+    height: 200px; 
+    background-color: gold; 
+  } 
+  .blue3 {
+    width: 100%;
+    height: 100px; 
+    background-color: blue; 
+  } 
+  /* Activity 4 styles */ 
+  .content4 {
+    /* This is the parent of the activity 4 boxes. */
+    height: 400px;
+    display: grid;
+  }
+
+  h4{
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .red4 {
+    width: 50%; 
+    height: 300px; 
+    background-color: red; 
+    grid-row: 50%;
+    grid-template-columns: 1/3;
+    grid-template-rows: 1/3;
+  } 
+
+  .green4 {
+    width: 50%; 
+    height: 100px; 
+    background-color: green; 
+    margin-left: 50%;
+  } 
+  .yellow4 {
+    width: 50%; 
+    height: 100px; 
+    background-color: gold; 
+    margin-left: 50%;
+  } 
+  .blue4 {
+    width: 50%; 
+    height: 100px; 
+    background-color: blue; 
+    margin-left: 50%;
+  } 
+  /* Activity 5 styles */ 
+  .content5 {
+    /* This is the parent of the activity 5 boxes. */
+    height: 400px;
+  }
+
+  h5{
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .red5 { 
+    width: 100%; 
+    height: 100px; 
+    background-color: red; 
+  } 
+  .green5 { 
+    width: 100px; 
+    height: 100px; 
+    background-color: green; 
+  } 
+  .yellow5 {
+    width: 100%; 
+    height: 300px; 
+    background-color: gold; 
+    margin-left: 200px;
+    float: left;
+  
+  } 
+  .blue5 {
+    width: 100%; 
+    height: 100px; 
+    background-color: blue; 
+  } 
+  /* Activity 6 styles */ 
+  .content6 {
+    /* This is the parent of the activity 6 boxes. */
+    display: grid;
+  }
+
+  h6{
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .red6 {
+    width: 65%; 
+    height: 200px; 
+    background-color: red; 
+    z-index: auto;
+  } 
+
+  .blue6 {
+    width: 40%; 
+    height: 500px; 
+    background-color: blue; 
+    z-index: auto;
+    place-content: center;
+    margin-left: 35%;
+  } 
+
+  .green6 {
+    width: 20%; 
+    height: 200px; 
+    background-color: green; 
+    z-index: auto;
+  } 
+  .yellow6 {
+    width: 20%; 
+    height: 400px; 
+    background-color: gold; 
+    z-index: auto;
+    margin-left: 80%;
+  } 
+ 
+  
+  
+  /* Do not make any changes below here */
+  .activity {
+    width: 70%; 
+    margin: 20px auto; 
+    font-family: Arial, sans-serif; 
+    border: 1px solid black; 
+    padding: 10px; 
+    clear:both; 
+    overflow: auto;
+  } 
+  
+  .hint {
+    border: 1px solid grey;
+    background: #e0e0e0;
+    padding: .5em;
+    position: relative;
+    margin: 1em 0;
+  }
+  .hint h3 {
+    margin: 0;
+  }
+  .hint:hover {
+    background: #d0d0d0;
+  }
+  .hint > div {
+    display: none;
+  }
+  
+  .hint input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .hint input[type=checkbox]:checked ~ div {
+    display: block;
+  }
+  
+  .hint i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 10px;
+    top: -3px;
+  }
+  .hint i:before, .hint i:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 9px;
+  }
+  .hint i:before {
+    transform: translate(2px, 0) rotate(45deg);
+  }
+  .hint i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+  }
+  
+  .hint input[type=checkbox]:checked ~ i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+  }
+  .hint input[type=checkbox]:checked ~ i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+  }
+  .hint a {
+    position: relative;
+    z-index: 1;
+  }
