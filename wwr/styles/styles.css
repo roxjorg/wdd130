@@ -3,6 +3,11 @@ div {
     margin: 0 auto;
  } 
 
+ nav {
+    display: flex;
+    justify-content: space-around;
+ }
+
 nav a {
     text-align: center;
     color:white;
@@ -12,8 +17,27 @@ nav a {
     padding: 35px;
 }
 
-#hero-msg h1, #hero-msg h4 {
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg {
     text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+#hero-msg h4 {
+    color: white;
 }
 
 .button-box {
@@ -24,8 +48,16 @@ main {
     text-align: center;
 }
 
+.home-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
 #background {
     height: 725px;
+    grid-column: 1/11;
+    grid-row: 4/9;
+    background-color: white;
 }
 
 body {
@@ -37,7 +69,9 @@ body {
 }
 
 header {
-    background-color: #034363
+    background-color: rgba(20,30,13,.7);
+    display: grid;
+    grid-template-columns: 150px auto;
 }
 
 nav a:hover {
@@ -46,10 +80,10 @@ nav a:hover {
 }
 
 .home-title {
-    color:#ffdc85;
+    color:black;
     font-family: "verdana", "sans-serif";
     font-size: 5em;
-    margin-top: 10px;
+    margin-top: 100px;
 }
 
 h2 {
@@ -71,7 +105,7 @@ h4 {
 }
 
 .book:hover, .join:hover {
-    color: white;
+    color: #ffdc85;
 }
 
 .msg h2 {
@@ -88,6 +122,9 @@ footer {
     color:black;
     padding: 25px 50px;
     margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer a {
@@ -132,6 +169,8 @@ p {
 
 #logo_link {
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 .rivers-card, .camping-card, .rapids-card {
@@ -140,8 +179,89 @@ p {
 
 .card-img {
     border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #ffdc85
 }
 
-main sectino img {
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+card-img, .mountains {
+    width: 100%;
+}
+
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.camping-card{
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.rapids-card{
+    grid-column: 810;
+    grid-row: 2/3;
+}
+
+.mountains{
+    grid-column: 2/7;
+    grid-row: 5/8;
+}
+
+.msg{ 
+    background-color: #ffdc85;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #d9c2a3
+}
+
+main section img {
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
