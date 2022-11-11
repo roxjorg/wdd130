@@ -1,0 +1,23 @@
+img {
+    align-items: center;
+}
+.wrapper div1{
+    background-color: rgb(64, 64, 197);
+    text-decoration-color: white;
+}
+
+footer {
+    font-family: "verdana", "sans-serif";
+    font-size: 15px;
+    margin: 0;
+    padding: 15px;  
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: rgb(64, 64, 197);
+    color: white;
+}
+
+h2 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
