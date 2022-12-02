@@ -108,3 +108,81 @@ nav a:hover {
     margin-right: 25px;
     font-size: 17px;
   }
+
+
+
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #003554   ;
+    --secondary-color: #B0E0FD ;
+    --accent1-color: #35393c;
+    --accent2-color: #006494;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Rock Salt";
+    --paragraph-font: Roboto, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #003554;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #006494; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #5da399; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #006494  ;
+    --nav-link-color: #396E94;
+    --nav-background-color: #b0e0fd;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #006494;
+  }
+
+header {
+    background-color: #B0E0FD;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+body {
+    background-color: #fcfbfb;
+    font-family: "Rock Salt", "Helvetica", "sans-serif";
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;   
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.logo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    display: flex;
+   justify-content: space-around;
+   }
+
+nav a {
+   text-align: center;
+   color:#006494;
+   text-decoration: none;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 35px;
+   font-family: "Rock Salt";
+}
+nav a:hover {
+   color: #051923;
+   }
+  
