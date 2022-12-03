@@ -70,26 +70,25 @@ nav a:hover {
    color: #051923;
    }
 
-   .home-title {
+.home-title {
     text-align: center;
    }
 
-   .Utah-title {
+.Utah-title {
     text-align: center;
    }
 
-   .Idaho-title {
+.Idaho-title {
     text-align: center;
    }
 
-   .message {
+.message {
     text-align: center;
    }
 
-   footer .social img {
-    padding-top: 15px;
+footer .social img {
+  padding-top: 15px;
 }
-
 
 /* Add a black background color to the top navigation bar */
 .topnav {
